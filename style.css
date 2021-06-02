@@ -1,0 +1,93 @@
+/* Se aplican los siguientes estilos para toda la pagina*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo de la pagina*/
+body {
+    /* Box-sizing permite establecer como se debe calcular el total del ancho y alto del elemento*/
+    box-sizing: border-box;
+    /* La altura minima para este componente, en este caso se aplica al viewport(vh) o vista o ventana del usuario*/
+    min-height: 100vh;
+    /* Se define este elemento como un flex(un modelo de caja flexible)*/
+    display: flex;
+    /* Se especifica como los elementos serán colocados en el componente flex, en este caso serán apilados en columnas */
+    flex-direction: column;
+    /* Se alinea el contenido de los elementos en el centro horizontal del componente  */
+    justify-content: center;
+    /* Se alinea el contenido de los elementos en el centro vertical del componente  */
+    align-items: center;
+    /* Se indica las fuentes o tipografias de la página */
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Se define el elemento svg, un contenedor con un sistema de coordenadas y ventana gráfica 
+propios. Se usa para incrustar un fragmento svg en el documento */
+svg{
+    /* Se indica el color de fondo del componente */
+    background-color: #2a2a2e;
+    /* Se define el color de texto de los elementos */
+    color:white;
+    /* Define el radio del borde del elemento */
+    border-radius: 5px;
+}
+
+/* Se establecen las propiedades para el elemento h1 */
+h1{
+    /* Establece valores del grosor del area de rellena en la parte inferior */
+    /* La unidad rem significa el tamaño de letra del elemento raíz, en este caso
+    Corresponde a 2 veces el tamaño de la letra del fontsize */
+    padding-bottom: 2rem;
+    /* Se le indica un color verde oliva oscuro*/
+    color: darkolivegreen;   
+}
+
+/* Se establece el estilo para el div con la id tooltip */
+#tooltip{
+    /* Con la posición absolute, un elemento se pone en cualquier posición de la página
+    Por defecto se pondrá debajo del anterior elemento y no afectara la posición
+    de los subsiguientes*/
+    position: absolute;
+    /* La propiedad visibility con el valor hidden 
+    esconde un elemento, pero deja (vacío) el espacio donde debería aparecer.*/ 
+    visibility: hidden;
+    /* Se especifica el color de fondo */
+    background-color: white;
+    /* Se especifica el tamaño de la letra en unidad rem */
+    font-size: .7rem;
+    /* Se especifica el radio en pixeles del borde */
+    border-radius: 5px;
+    /* Se indica el valor del grosor del area de relleno */
+    padding: .3rem;
+    /* Este elemento será un elemento de tipo flex */
+    display: flex;
+    /* Se especifica como los elementos serán colocados en el componente flex, 
+    en este caso serán apilados en columnas */
+    flex-direction: column;
+    /* Se alinea el contenido de los elementos en el centro vertical del componente  */
+    justify-content: center;
+    /* Centra el texto del componente*/
+    text-align: center;
+}
+
+/* Se indican las propiedades para el elemento de id country_name */
+#country_name{
+
+    /*Se indica el grosor del area de relleno*/
+    padding: .3rem;
+}
+
+/* Se indican las propiedades para el elemento de id country_population */
+#country_name{
+
+    /*Se indica el grosor del area de relleno*/
+    padding: .3rem;
+}
+
+/* Se indican las propiedades para el elmento de clase bar */
+.bar {
+    /* Permite definir la transición entre dos estados de un elemento. 
+    En este caso de .2 segundos para todas las propiedades */
+    transition: .2s all;
+}   
